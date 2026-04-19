@@ -19,6 +19,7 @@ expenses = [] # List to store expenses
 def add_expense():
     """Add a new expense to the list"""
     name = input("Enter expense name: ")
+    category = input("Enter category (e.g. food, transport, entertainment): ")
     amount = input("Enter amount: ")
 
     try:
@@ -30,7 +31,7 @@ def add_expense():
         print("Invalid amount! Please enter a Number.")
         return
 
-    expense = {"name": name, "amount": amount}
+    expense = {"name": name, "category": category, "amount": amount}
     expenses.append(expense)
 
     save_expenses()
@@ -46,7 +47,7 @@ def list_expenses():
 
     print("\nYour expenses:")
     for i, exp in enumerate(expenses, start=1):
-        print(f"{i}. {exp['name']} - {exp['amount']:.2f}")
+        print(f"{i}. {exp['name']} [{exp['category']}] - {exp['amount']:.2f}")
 
 
 
