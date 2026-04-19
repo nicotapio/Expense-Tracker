@@ -1,57 +1,61 @@
-
 # Expense Tracker (CLI)
 
 A simple command-line expense tracker written in Python.
-The program allows users to add expenses, list them, and view the total amount spent.
-Expenses are stored in a JSON file so they persist between runs.
+This project allows users to record expenses, assign categories, list all expenses, and view the total amount spent.
+Expenses are stored in a JSON file so they persist between program runs.
 
 ## Features
 
-- Add an expense with a name, category and amount
+- Add expenses with a name, category, and amount
 - List all recorded expenses
-- Show the total amount spent
+- Show total amount spent
+- Input validation and error handling
 - Data persistence using a JSON file
-- Error handling for invalid user input
 
 ## Installation
 
-Clone the repository and move into the project directory:
+Clone the repository and navigate to the project directory:
 
-```bash
-git clone https://github.com/nicotapio/
-expense-tracker.git
-cd expense-tracker
+git clone https://github.com/nicotapio/Expense-Tracker.git  
+cd Expense-Tracker
 
+(Optional but recommended) Create and activate a virtual environment:
 
-
-Create and activate a virtual environment:
-
-```bash
-python3 -m venv venv
+python3 -m venv venv  
 source venv/bin/activate
-```
-
 
 ## Usage
 
 Run the program from the terminal:
 
-```bash
 python3 tracker.py
-```
 
-The program will display a menu in the terminal.
+You will see a menu like this:
+
+=== Expense Tracker ===  
+1. Add expense  
+2. List expenses  
+3. Show total  
+4. Save and exit  
+
 Type the number of the option you want and press Enter.
 
-Menu options:
-- Add expense
-- List expenses
-- Show total
-- Save and exit
+### Example session
+
+Choose an option: 1  
+Enter expense name: Coffee  
+Enter category: food  
+Enter amount: 3.50  
+Expense added!
 
 Expenses are automatically saved and loaded between program runs.
+
+## What I Learned
+
+Building this project helped me understand how to structure a small Python CLI application using functions and persistent storage.
+I learned how to use Git and GitHub properly, including branching, merging, commits, and resolving conflicts.
+I also gained confidence using the terminal and writing clear project documentation with Markdown.
 
 ## Requirements
 
 - Python 3.8 or newer
-
