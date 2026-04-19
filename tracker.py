@@ -23,6 +23,9 @@ def add_expense():
 
     try:
         amount = float(amount)
+        if amount < 0:
+            print("Amount cannot be negative.")
+            return
     except ValueError:
         print("Invalid amount! Please enter a Number.")
         return
