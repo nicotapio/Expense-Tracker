@@ -7,7 +7,7 @@ Expenses are stored in a JSON file so they persist between runs.
 
 ## Features
 
-- Add an expense with a name and amount
+- Add an expense with a name, category and amount
 - List all recorded expenses
 - Show the total amount spent
 - Data persistence using a JSON file
