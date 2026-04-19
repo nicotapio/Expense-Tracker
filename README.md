@@ -16,39 +16,38 @@ Expenses are stored in a JSON file so they persist between program runs.
 
 Clone the repository and navigate to the project directory:
 
-git clone https://github.com/nicotapio/Expense-Tracker.git  
+
+```bash
+git clone https://github.com/nicotapio/Expense-Tracker.git
 cd Expense-Tracker
+```
 
 (Optional but recommended) Create and activate a virtual environment:
 
+```bash
 python3 -m venv venv  
 source venv/bin/activate
+```
 
 ## Usage
 
 Run the program from the terminal:
 
+```bash
 python3 tracker.py
+```
 
 You will see a menu like this:
 
+```text
 === Expense Tracker ===  
 1. Add expense  
 2. List expenses  
 3. Show total  
-4. Save and exit  
+4. Save and exit 
+```
 
 Type the number of the option you want and press Enter.
-
-### Example session
-
-Choose an option: 1  
-Enter expense name: Coffee  
-Enter category: food  
-Enter amount: 3.50  
-Expense added!
-
-Expenses are automatically saved and loaded between program runs.
 
 ## What I Learned
 
